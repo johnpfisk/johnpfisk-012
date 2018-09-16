@@ -1,0 +1,12 @@
+---
+label: header-std-2
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  default: block
+  label: block
+  name: block
+  hidden: true
+  config:
+    required: true
