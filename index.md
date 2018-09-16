@@ -1,11 +1,11 @@
 ---
 layout: blocks
 title: Home
-date: 2018-09-16 22:00:00 +1000
+date: 2018-09-16 12:00:00 +0000
 page_sections:
 - template: navigation-header-w-button
   block: header-2
-  logo: "/uploads/2018/06/21/forestry-full.svg"
+  logo: "/uploads/2018/09/16/johnpfisk-com-002.png"
   navigation:
   - link: "/"
     link_text: Home
