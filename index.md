@@ -8,10 +8,12 @@ photos:
   title: Glass House Mountains
   thumbnail: "/uploads/2018/09/17/jpf-tn-00001.jpg"
   image: "/uploads/2018/09/17/jpf-00001.jpg"
+  caption: The Glass House Mountains.
 - template: lens-photo
   block: photo
   title: Dandelion
   thumbnail: "/uploads/2018/09/17/jpf-tn-00002.jpg"
   caption: Dandelion up close
+  image: "/uploads/2018/09/17/jpf-00002.jpg"
 
 ---
