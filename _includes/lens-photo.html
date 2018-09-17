@@ -1,0 +1,8 @@
+<!-- Thumbnail -->
+<section id="thumbnails">{% for photo in site.photos %}
+	<article>
+		<a class="thumbnail" href="{{ section.thumbnail }}" data-position="left center"><img src="{{ section.image }}" alt="{{ section.description }}" /></a>
+		<h2>{{ section.title }}</h2>
+		<p>{{ section.caption }}</p>
+	</article>
+{% endfor %}</section>
