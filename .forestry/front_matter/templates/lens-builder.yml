@@ -10,5 +10,14 @@ fields:
   default: lens
   config:
     required: true
+- type: field_group_list
+  fields:
+  - type: blocks
+    template_types:
+    - lens-photo
+    label: Photo
+    name: photo
+  label: Photos
+  name: photos
 pages:
 - test.md
