@@ -11,6 +11,7 @@ page_sections:
 - template: signup-bar
   block: cta-bar
   email_recipient: john@johnpfisk.com
+  content: I'd love to hear from you. <br>Get in touch with the form below.
 - template: simple-footer
   block: footer-1
 menu:
