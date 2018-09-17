@@ -10,6 +10,7 @@ page_sections:
   block: text-1
 - template: signup-bar
   block: cta-bar
+  email_recipient: john@johnpfisk.com
 - template: simple-footer
   block: footer-1
 menu:
