@@ -24,5 +24,3 @@ fields:
     name: photo
   label: Photos
   name: photos
-pages:
-- test.md
