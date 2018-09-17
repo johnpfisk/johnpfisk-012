@@ -24,3 +24,5 @@ fields:
     name: photo
   label: Photos
   name: photos
+pages:
+- tes.md
