@@ -1,7 +1,7 @@
 ---
 title: Test1
 layout: lens
-date: 2018-09-17 18:01:49 +1000
+date: 2018-09-17 08:01:49 +0000
 photos:
 - template: lens-photo
   block: photo
@@ -16,6 +16,6 @@ photos:
   thumbnail: "/uploads/2018/09/17/02tn.jpg"
   image: "/uploads/2018/09/17/02.jpg"
   caption: Second photo
-  description: This is the second photo.
+  description: This is the second photo. 1
 
 ---
