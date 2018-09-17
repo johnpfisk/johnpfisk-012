@@ -10,3 +10,5 @@ fields:
   default: lens
   config:
     required: true
+pages:
+- test.md
