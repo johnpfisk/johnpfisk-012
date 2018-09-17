@@ -10,6 +10,13 @@ photo:
   image: "/uploads/2018/09/17/01.jpg"
   caption: P1
   description: P1 alt text
-photos: []
+photos:
+- template: lens-photo
+  block: photo
+  title: p1
+  thumbnail: "/uploads/2018/09/17/01tn.jpg"
+  image: "/uploads/2018/09/17/01.jpg"
+  caption: p1
+  description: p1 d
 
 ---
