@@ -10,6 +10,11 @@ fields:
   default: lens
   config:
     required: true
+- type: blocks
+  name: photo
+  label: Photo
+  template_types:
+  - lens-photo
 - type: field_group_list
   fields:
   - type: blocks
