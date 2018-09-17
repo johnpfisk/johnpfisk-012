@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <!-- lens.html START -->
+<html lang="">
 {% include lens-head.html %}
+  <body class="is-loading-0 is-loading-1 is-loading-2">
 {% include lens-heading.html %}
 <section id="thumbnails">{% for photo in page.photos %}
 {% include lens-{{ photo.block }}.html %}
 {% endfor %}</section>
 {% include lens-footer.html %}
 <!-- lens.html END -->
+  </body>
+</html>
