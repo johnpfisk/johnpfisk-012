@@ -15,3 +15,5 @@ fields:
   label: Photos
   template_types:
   - lens-photo
+pages:
+- test1.md
