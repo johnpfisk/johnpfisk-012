@@ -8,7 +8,7 @@ fields:
   label: block
   name: block
   hidden: true
-  default: lens-photo
+  default: photo
 - type: text
   name: title
   label: Title
