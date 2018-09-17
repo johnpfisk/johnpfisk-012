@@ -5,19 +5,7 @@ date: 2018-09-16 12:00:00 +0000
 page_sections:
 - template: header-std-2
   block: header-std-2
-- template: navigation-header-w-button
-  block: header-2
   logo: "/uploads/2018/09/16/johnpfisk-com-002.png"
-  navigation:
-  - link: "/"
-    link_text: Home
-  - link: "#"
-    link_text: Features
-  - link: "#"
-    link_text: Team
-  cta:
-    url: https://github.com/forestryio/ubuild-jekyll/archive/master.zip
-    button_text: Download
 - template: hero-banner-w-image
   block: hero-2
   headline: uBuild <br><strong>design blocks</strong>
