@@ -3,6 +3,10 @@ label: navigation-header-std-2
 hide_body: false
 is_partial: true
 fields:
+- type: file
+  name: logo
+  label: logo
+  default: "/uploads/2018/09/16/johnpfisk-com-002.png"
 - type: text
   default: header-std-2
   label: block
