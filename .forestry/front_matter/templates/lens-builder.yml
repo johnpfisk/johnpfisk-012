@@ -10,6 +10,7 @@ fields:
   default: lens
   config:
     required: true
+  description: The HTML file that will be used for the page layout.
 - type: blocks
   name: photos
   label: Photos
