@@ -1,0 +1,12 @@
+---
+label: lens-builder
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: layout
+  name: layout
+  hidden: true
+  default: lens
+  config:
+    required: true
