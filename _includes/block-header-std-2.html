@@ -8,16 +8,12 @@
 
   <nav class="block-header-2--nav">
     <ul>
-      {% for item in site.menus.header %}
+      {% for item in site.menus.name %}
         <li class="nav-item menu-item-{{ loop.index }} {% if page.url == item.url %}active{% endif %}">
           <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
         </li>
       {% endfor %}        
     </ul>
-    <a class="button primary small block-header-2--cta" href="{{ section.cta.url }}">{{ section.cta.button_text }}</a>
   </nav>
-  
-  <ul>
-</ul>
 
 </header>
