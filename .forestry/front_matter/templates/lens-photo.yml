@@ -1,0 +1,26 @@
+---
+label: lens-photo
+hide_body: false
+is_partial: true
+display_field: title
+fields:
+- type: text
+  label: block
+  name: block
+  hidden: true
+  default: lens-photo
+- type: text
+  name: title
+  label: Title
+- type: file
+  label: Thumbnail
+  name: thumbnail
+- type: file
+  label: Image
+  name: image
+- type: text
+  label: Caption
+  name: caption
+- type: text
+  name: description
+  label: Description
