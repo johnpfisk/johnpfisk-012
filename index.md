@@ -10,7 +10,8 @@ photos:
   thumbnail: "/uploads/2018/09/17/jpf-tn-00001.jpg"
   image: "/uploads/2018/09/17/jpf-00001.jpg"
   caption: Glass House Mountains
-  description: The view over the glasshouse mountains from Mary Cairncross Park.
+  description: The view over the glasshouse mountains from Mary Cairncross Scenic
+    Reserve.
 
 ---
 foo bar
