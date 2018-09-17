@@ -6,6 +6,5 @@ photos:
 - template: lens-photo
   block: photo
   title: p1
-published: false
 
 ---
