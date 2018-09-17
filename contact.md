@@ -12,5 +12,8 @@ page_sections:
   block: cta-bar
 - template: simple-footer
   block: footer-1
+menu:
+  main:
+    weight: 3
 
 ---
