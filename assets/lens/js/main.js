@@ -169,6 +169,16 @@ var main = (function($) { var _ = {
 
 			_.$toggle = $('.toggle');
 
+		// IE<9: Fix viewer width (no calc support).
+			if (skel.vars.IEVersion < 9)
+				_.$window
+					.on('resize', function() {
+						window.setTimeout(function() {
+							_.$viewer.css('width', _.$window.width() - _.$main.width());
+						}, 100);
+					})
+					.trigger('resize');
+
 	},
 
 	/**
@@ -178,17 +188,17 @@ var main = (function($) { var _ = {
 
 		// Window.
 
-			// Remove is-preload-* classes on load.
+			// Remove is-loading-* classes on load.
 				_.$window.on('load', function() {
 
-					_.$body.removeClass('is-preload-0');
+					_.$body.removeClass('is-loading-0');
 
 					window.setTimeout(function() {
-						_.$body.removeClass('is-preload-1');
+						_.$body.removeClass('is-loading-1');
 					}, 100);
 
 					window.setTimeout(function() {
-						_.$body.removeClass('is-preload-2');
+						_.$body.removeClass('is-loading-2');
 					}, 100 + Math.max(_.settings.layoutDuration - 150, 0));
 
 				});
@@ -198,11 +208,11 @@ var main = (function($) { var _ = {
 
 				_.$window.on('resize', function() {
 
-					_.$body.addClass('is-preload-0');
+					_.$body.addClass('is-loading-0');
 					window.clearTimeout(resizeTimeout);
 
 					resizeTimeout = window.setTimeout(function() {
-						_.$body.removeClass('is-preload-0');
+						_.$body.removeClass('is-loading-0');
 					}, 100);
 
 				});
@@ -212,7 +222,7 @@ var main = (function($) { var _ = {
 			// Hide main wrapper on tap (<= medium only).
 				_.$viewer.on('touchend', function() {
 
-					if (breakpoints.active('<=medium'))
+					if (skel.breakpoint('medium').active)
 						_.hide();
 
 				});
@@ -268,7 +278,7 @@ var main = (function($) { var _ = {
 					.on('touchstart', function(event) {
 
 						// Bail on xsmall.
-							if (breakpoints.active('<=xsmall'))
+							if (skel.breakpoint('xsmall').active)
 								return;
 
 						// Record start position.
@@ -279,7 +289,7 @@ var main = (function($) { var _ = {
 					.on('touchmove', function(event) {
 
 						// Bail on xsmall.
-							if (breakpoints.active('<=xsmall'))
+							if (skel.breakpoint('xsmall').active)
 								return;
 
 						// No start position recorded? Bail.
@@ -355,7 +365,7 @@ var main = (function($) { var _ = {
 			_.$window.on('keydown', function(event) {
 
 				// Ignore if xsmall is active.
-					if (breakpoints.active('<=xsmall'))
+					if (skel.breakpoint('xsmall').active)
 						return;
 
 				// Check keycode.
@@ -470,13 +480,21 @@ var main = (function($) { var _ = {
 	 */
 	init: function() {
 
-		// Breakpoints.
-			breakpoints({
-				xlarge:  [ '1281px',  '1680px' ],
-				large:   [ '981px',   '1280px' ],
-				medium:  [ '737px',   '980px'  ],
-				small:   [ '481px',   '736px'  ],
-				xsmall:  [ null,      '480px'  ]
+		// IE<10: Zero out transition delays.
+			if (skel.vars.IEVersion < 10) {
+
+				_.settings.slideDuration = 0;
+				_.settings.layoutDuration = 0;
+
+			}
+
+		// Skel.
+			skel.breakpoints({
+				xlarge: '(max-width: 1680px)',
+				large: '(max-width: 1280px)',
+				medium: '(max-width: 980px)',
+				small: '(max-width: 736px)',
+				xsmall: '(max-width: 480px)'
 			});
 
 		// Everything else.
@@ -484,13 +502,18 @@ var main = (function($) { var _ = {
 			_.initViewer();
 			_.initEvents();
 
-		// Show first slide if xsmall isn't active.
-			breakpoints.on('>xsmall', function() {
+		// Initial slide.
+			window.setTimeout(function() {
 
-				if (_.current === null)
-					_.switchTo(0, true);
+				// Show first slide if xsmall isn't active or it just deactivated.
+					skel.on('-xsmall !xsmall', function() {
 
-			});
+						if (_.current === null)
+							_.switchTo(0, true);
+
+					});
+
+			}, 0);
 
 	},
 
@@ -502,7 +525,7 @@ var main = (function($) { var _ = {
 
 		// Already at index and xsmall isn't active? Bail.
 			if (_.current == index
-			&&	!breakpoints.active('<=xsmall'))
+			&&	!skel.breakpoint('xsmall').active)
 				return;
 
 		// Locked? Bail.
@@ -514,7 +537,8 @@ var main = (function($) { var _ = {
 
 		// Hide main wrapper if medium is active.
 			if (!noHide
-			&&	breakpoints.active('<=medium'))
+			&&	skel.breakpoint('medium').active
+			&&	skel.vars.IEVersion > 8)
 				_.hide();
 
 		// Get slides.
