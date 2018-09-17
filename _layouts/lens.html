@@ -1,11 +1,11 @@
 <!-- lens.html a-->
 {% include lens-head.html %}
 <!-- lens.html b-->
-{% for photo in page.photos %}
+<section id="thumbnails">{% for photo in page.photos %}
 <!-- lens.html g-->
 {% include lens-{{ photo.block }}.html %}
 <!-- lens.html h-->
-{% endfor %}
+{% endfor %}</section>
 <!-- lens.html y-->
 {% include lens-footer.html %}
 <!-- lens.html z-->
