@@ -15,5 +15,10 @@ photos:
   thumbnail: "/uploads/2018/09/17/jpf-tn-00002.jpg"
   caption: Dandelion up close
   image: "/uploads/2018/09/17/jpf-00002.jpg"
+- template: lens-photo
+  block: photo
+  title: Paddock
+  thumbnail: "/uploads/2018/09/17/jpf-tn-00003.jpg"
+  caption: Waiting in the paddock.
 
 ---
