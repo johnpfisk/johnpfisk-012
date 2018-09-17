@@ -6,4 +6,3 @@ page_sections: []
 photos: []
 
 ---
-foo bar
