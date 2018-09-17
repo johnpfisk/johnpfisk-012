@@ -8,6 +8,5 @@ photos:
   title: Glass House Mountains
   thumbnail: "/uploads/2018/09/17/jpf-tn-00001.jpg"
   image: "/uploads/2018/09/17/jpf-00001.jpg"
-published: false
 
 ---
