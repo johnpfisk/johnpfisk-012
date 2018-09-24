@@ -2,14 +2,14 @@
   <div class="video-overlay"></div>
   <div class="video-content">
     <div class="inner">
-      <h1>{{ section.title }}</h1>
-      <p>{{ section.caption }}</p>
+      <h1>{{ video.title }}</h1>
+      <p>{{ video.caption }}</p>
       <div class="scroll-icon">
-        <a class="scrollTo" data-scrollTo="{{ section.scrollTo }}" href="#"><img src="img/scroll-icon.png" alt=""></a>
+        <a class="scrollTo" data-scrollTo="{{ video.scrollTo }}" href="#"><img src="img/scroll-icon.png" alt=""></a>
       </div>    
     </div>
   </div>
   <video autoplay="" loop="" muted>
-    <source src="{{ section.videoURL }}" type="video/mp4" />
+    <source src="{{ video.videoURL }}" type="video/mp4" />
   </video>
 </div>
