@@ -17,3 +17,5 @@ fields:
   config:
     required: true
   default: highway-full
+pages:
+- highway.md
