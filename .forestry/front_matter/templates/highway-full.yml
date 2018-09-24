@@ -4,7 +4,10 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  label: t
-  name: t
+  label: Page Title
+  name: title
+  description: This is the page title.
+  config:
+    required: true
 pages:
 - highway.md
