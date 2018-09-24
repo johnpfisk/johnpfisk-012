@@ -7,6 +7,10 @@ videos:
   layout: highway-video-container
   title: Video 1
   videoURL: https://johnpfisk.com/assets/highway/highway-loop.mp4
+undefined:
+- title: Image 1
+  imageURL: "/uploads/2018/09/17/jpf-00003.jpg"
+  imageThumbnailURL: "/uploads/2018/09/17/jpf-00003.jpg"
 
 ---
 Some Text Body 04
