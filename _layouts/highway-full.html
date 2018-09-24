@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- 
+Highway Template
+http://www.templatemo.com/tm-520-highway
+-->
+<html lang="">
+{% include highway-head.html %}
+<body>
+{% for section in page.sections %}
+{% include highway-{{ section.blockType }}.html %}
+{% endfor %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{{ "highway/js/vendor/jquery-1.11.2.min.js" | relative_url }}"><\/script>')</script>
+  <script src="{{ "highway/js/vendor/bootstrap.min.js" | relative_url }}"></script>
+  <script src="{{ "highway/js/plugins.js" | relative_url }}"></script>
+  <script src="{{ "highway/js/main.js" | relative_url }}"></script>
+</body>
+</html>
