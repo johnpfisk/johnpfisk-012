@@ -6,6 +6,7 @@ http://www.templatemo.com/tm-520-highway
 <html lang="">
 {% include highway-head.html %}
 <body>
+{% include highway-titlebar.html %}
 {% for section in page.sections %}
 {% include highway-{{ section.blockType }}.html %}
 {% endfor %}
