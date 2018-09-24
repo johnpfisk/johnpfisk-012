@@ -1,0 +1,16 @@
+<section class="overlay-menu">
+  <div class="container">
+    <div class="row">
+      <div class="main-menu">
+          <ul>
+{% for item in site.menus.main %}
+            <li>
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+{% endfor %}
+          </ul>
+          <p>We create awesome templates for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
