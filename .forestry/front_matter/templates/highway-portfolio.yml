@@ -2,7 +2,7 @@
 label: highway-portfolio
 hide_body: false
 is_partial: true
-display_field: layout
+display_field: portfolio
 fields:
 - type: text
   label: Layout
