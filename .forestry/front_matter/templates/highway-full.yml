@@ -6,3 +6,5 @@ fields:
 - type: text
   label: t
   name: t
+pages:
+- highway.md
