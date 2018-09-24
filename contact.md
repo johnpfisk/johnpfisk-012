@@ -16,6 +16,6 @@ page_sections:
   block: footer-1
 menu:
   main:
-    weight: 3
+    weight: 5
 
 ---

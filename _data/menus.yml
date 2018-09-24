@@ -1,5 +1,12 @@
 ---
 main:
+- weight: 3
+  title: Blog
+- weight: 1
+  parent: item_YmRz4Tg
+  title: Gallery One
+- weight: 2
+  title: Galleries
 - identifier: home
   url: "/"
   weight: 1
