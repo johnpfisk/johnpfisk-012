@@ -28,3 +28,9 @@ fields:
   - type: file
     label: Image Thumbnail URL
     name: imageThumbnailURL
+  label: Portfolio
+  name: portfolio
+  config:
+    labelField: title
+    min: '1'
+  description: Images to be included in the portfolio
