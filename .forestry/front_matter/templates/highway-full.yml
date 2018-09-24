@@ -7,7 +7,7 @@ fields:
   name: layout
   label: Layout
   description: The _layout filename
-  hidden: false
+  hidden: true
   config:
     required: true
   default: highway-full
