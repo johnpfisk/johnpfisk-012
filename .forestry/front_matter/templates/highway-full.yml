@@ -25,5 +25,10 @@ fields:
     max: '1'
   label: Videos
   name: videos
+- type: include
+  template: highway-portfolio
+  label: Portfolio
+  name: portfolio
+  description: Portfolio to Display
 pages:
 - highway.md
