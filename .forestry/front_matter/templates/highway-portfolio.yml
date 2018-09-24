@@ -1,0 +1,29 @@
+---
+label: highway-portfolio
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  label: Layout
+  name: layout
+  description: The _include HTML template
+  hidden: true
+  config:
+    required: true
+  default: highway-portfolio
+- type: field_group_list
+  fields:
+  - type: text
+    label: Title
+    name: title
+    config:
+      required: true
+  - type: text
+    name: caption
+    label: Caption
+  - type: file
+    name: imageURL
+    label: Image URL
+  - type: file
+    label: Image Thumbnail URL
+    name: imageThumbnailURL
