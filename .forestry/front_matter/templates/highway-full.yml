@@ -9,5 +9,13 @@ fields:
   description: This is the page title.
   config:
     required: true
+- type: text
+  name: layout
+  label: Layout
+  description: The _layout filename
+  hidden: true
+  config:
+    required: true
+  default: highway-full
 pages:
 - highway.md
