@@ -1,0 +1,10 @@
+<!--highway-blog-archive A-->
+<div class="archives">
+  <div class="sidebar-heding">
+    <h2>Archives</h2>
+  </div>
+  <ul>{% for archive in section.archives %}
+    <li><a href="{{ archive.url }}">{{ archvie.title }} {{ archive.post_count }}</a></li>
+  {% endfor %}</ul>
+</div>
+<!--highway-blog-archive Z-->
