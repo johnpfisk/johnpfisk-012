@@ -42,7 +42,7 @@ http://www.templatemo.com/tm-520-highway
   <div class="video-overlay"></div>
   <div class="video-content">
     <div class="inner">
-      <h1>Video 1</h1>
+      <h1></h1>
       <p></p>
       <div class="scroll-icon">
         <a class="scrollTo" data-scrollTo="" href="#"><img src="/assets/highway/img/scroll-icon.png" alt=""></a>
@@ -50,7 +50,7 @@ http://www.templatemo.com/tm-520-highway
     </div>
   </div>
   <video autoplay="" loop="" muted>
-    <source src="https://johnpfisk.com/assets/highway/highway-loop.mp4" type="video/mp4" />
+    <source src="" type="video/mp4" />
   </video>
 </div>
 
@@ -92,6 +92,47 @@ http://www.templatemo.com/tm-520-highway
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <!-- Modal Content -->
+  <div class="modal-content">
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h3 class="header-title"></h3>
+      <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
+    </div>
+    <!-- Modal Body -->
+    <div class="modal-body">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="contact" action="" method="post">
+            <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                  </fieldset>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/assets/highway/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
