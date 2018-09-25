@@ -1,7 +1,7 @@
 <!--highway-portfolio A-->
-<!-- {{ portfolio }} -->
+<!-- {{ include.portfolio }} -->
 <div class="full-screen-portfolio" id="portfolio">
-	<div class="container-fluid">{% for item in portfolio %}
+	<div class="container-fluid">{% for item in include.portfolio %}
 		<div class="col-md-4 col-sm-6">
 			<div class="portfolio-item">
 				<a href="{{ item.imageURL }}" data-lightbox="image-1"><div class="thumb">
@@ -11,9 +11,7 @@
 							<p>{{ item.caption }}</p>
 						</div>
 					</div>
-					<div class="image">
-						<img src="{{ item.imageThumbURL }}">
-					</div>
+					<div class="image"><img src="{{ item.imageThumbURL }}"></div>
 				</div></a>
 			</div>
 		</div>
