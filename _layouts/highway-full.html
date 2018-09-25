@@ -10,8 +10,9 @@ http://www.templatemo.com/tm-520-highway
 {{ page }}
 -->
 {% include highway-titlebar.html %}
-{% include highway-video-container.html video=page.videos %}
-{% include highway-portfolio.html portfolio=page.portfolio %}
+{% for section in page.sections %}
+{% include {{ section.layout }}.html %}
+{% endfor %}
 {% include highway-menu.html %}
 {% include highway-modal.html %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
