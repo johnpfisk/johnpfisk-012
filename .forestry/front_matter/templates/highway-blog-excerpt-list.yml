@@ -1,0 +1,13 @@
+---
+label: highway-blog-excerpt-list
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: The HTML _include template
+  hidden: true
+  config:
+    required: true
+  default: highway-blog-excerpt-list
