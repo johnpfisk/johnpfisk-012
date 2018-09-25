@@ -1,20 +1,19 @@
-<!-- highway-video-=container A-->
-<!--
+<!-- highway-video-=container A
 {{include.video}}
 -->
 <div id="video-container">
   <div class="video-overlay"></div>
   <div class="video-content">
     <div class="inner">
-      <h1>{{ include.video.title }}</h1>
-      <p>{{ include.video.caption }}</p>
+      <h1>{{ section.video_title }}</h1>
+      <p>{{ section.video_caption }}</p>
       <div class="scroll-icon">
         <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="{{ "/assets/highway/img/scroll-icon.png" | relative_url }}" alt=""></a>
       </div>    
     </div>
   </div>
   <video autoplay="" loop="" muted>
-    <source src="{{ include.video.videoURL }}" type="video/mp4" />
+    <source src="{{ section.video_url }}" type="video/mp4" />
   </video>
 </div>
 <!-- highway-video-=container Z-->
