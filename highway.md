@@ -24,7 +24,6 @@ sections:
     image_caption: Some horses.
     image_thumbnail: "/uploads/2018/09/17/jpf-00003-1.jpg"
     image: "/uploads/2018/09/17/jpf-00003.jpg"
-published: false
 
 ---
 Some Text in the main body.
