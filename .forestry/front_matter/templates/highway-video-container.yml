@@ -28,7 +28,3 @@ fields:
   description: The URL of the video
   config:
     required: true
-- type: text
-  label: Scroll To
-  name: scrollTo
-  description: The scroll location
