@@ -2,7 +2,7 @@
 label: highway-video-container
 hide_body: false
 is_partial: true
-display_field: title
+display_field: video_title
 fields:
 - type: text
   name: layout
@@ -13,17 +13,17 @@ fields:
     required: true
   default: highway-video-container
 - type: text
-  label: Title
-  name: title
+  label: Video Title
+  name: video_title
   description: The video title
   config:
     required: true
 - type: text
-  name: caption
-  label: Caption
+  name: video_caption
+  label: Video Caption
   description: The video caption
 - type: text
-  name: videoURL
+  name: video_url
   label: Video URL
   description: The URL of the video
   config:
