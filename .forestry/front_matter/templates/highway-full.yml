@@ -25,4 +25,5 @@ fields:
   - highway-video-container
   - highway-portfolio
 pages:
+- highway-t02.md
 - highway.md
