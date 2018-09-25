@@ -1,17 +1,18 @@
-<!--highway-portfolio A-->
-<!-- {{ include.portfolio }} -->
+<!--highway-portfolio A
+{{ include.portfolio }}
+-->
 <div class="full-screen-portfolio" id="portfolio">
-	<div class="container-fluid">{% for item in include.portfolio %}
+	<div class="container-fluid">{% for item in section.portfolio %}
 		<div class="col-md-4 col-sm-6">
 			<div class="portfolio-item">
-				<a href="{{ item.imageURL }}" data-lightbox="image-1"><div class="thumb">
+				<a href="{{ item.image }}" data-lightbox="image-1"><div class="thumb">
 					<div class="hover-effect">
 						<div class="hover-content">
-							<h1>{{ item.title }}</h1>
-							<p>{{ item.caption }}</p>
+							<h1>{{ item.image_title }}</h1>
+							<p>{{ item.image_caption }}</p>
 						</div>
 					</div>
-					<div class="image"><img src="{{ item.imageThumbURL }}"></div>
+					<div class="image"><img src="{{ item.image_thumbnail }}"></div>
 				</div></a>
 			</div>
 		</div>
