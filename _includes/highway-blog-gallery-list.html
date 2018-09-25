@@ -1,0 +1,8 @@
+<div class="latest-gallery">
+  <div class="sidebar-heding">
+    <h2>Latest Gallery</h2>
+  </div>
+  <ul>{% for image in gallery_list %}
+    <li><a href="#"></a><img src="{{ image.thumbnail_image }}" alt="image_caption"></a></li>
+  {% endfor %}</ul>
+</div>
