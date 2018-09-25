@@ -20,6 +20,7 @@ email: john@johnpfisk.com
 description: The home of johnpfisk on the web.
 baseurl: "/"
 url: ''
+excerpt_separator: "<!--more-->"
 defaults:
 - scope:
     path: ''
