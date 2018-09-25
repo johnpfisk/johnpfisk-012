@@ -1,0 +1,13 @@
+---
+label: highway-blog-category-list
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: The _include HTML template
+  default: highway-blog-category-list
+  hidden: true
+  config:
+    required: true
