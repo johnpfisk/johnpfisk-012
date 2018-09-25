@@ -1,0 +1,17 @@
+<!-- highway-blog-paging A -->
+<div class="col-md-12">
+  <ul class="page-number">
+{% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
+{% else %}
+    <li>Previous</li>
+{% endif %}
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+{% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path }}" class="next">Next</a></li>
+{% else %}
+    <li>Next</li>
+{% endif %}
+  </ul>
+</div>
+<!-- highway-blog-paging Z -->
