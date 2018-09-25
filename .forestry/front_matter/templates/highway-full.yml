@@ -17,15 +17,12 @@ fields:
   description: This is the page title.
   config:
     required: true
-- type: include
-  template: highway-video-container
-  label: Video
-  name: video
-  description: Page Video
-- type: include
-  template: highway-portfolio
-  label: Portfolio
-  name: portfolio
-  description: Portfolio to Display
+- type: blocks
+  name: sections
+  label: sections
+  description: Page Sections
+  template_types:
+  - highway-video-container
+  - highway-portfolio
 pages:
 - highway.md
