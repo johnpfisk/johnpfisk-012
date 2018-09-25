@@ -15,19 +15,23 @@ fields:
 - type: field_group_list
   fields:
   - type: text
-    label: Title
-    name: title
+    label: Image Title
+    name: image_title
     config:
       required: true
+    description: The title of the image.
   - type: text
-    name: caption
-    label: Caption
+    name: image_caption
+    label: Image Caption
+    description: The caption of the image.
   - type: file
-    name: imageURL
-    label: Image URL
+    label: Image Thumbnail
+    name: image_thumbnail
+    description: The thumbnail image.
   - type: file
-    label: Image Thumbnail URL
-    name: imageThumbnailURL
+    name: image
+    label: Image
+    description: The image.
   label: Portfolio
   name: portfolio
   config:
