@@ -20,6 +20,9 @@ portfolio:
   caption: Horses
   imageURL: "/uploads/2018/09/17/jpf-00003-1.jpg"
   imageThumbnailURL: "/uploads/2018/09/17/jpf-00003.jpg"
+caption: Start of the new site.
+videoURL: https://johnpfisk.com/assets/highway/highway-loop.mp4
+scrollTo: ''
 
 ---
 Some Text Body 06
