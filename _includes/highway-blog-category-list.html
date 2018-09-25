@@ -1,8 +1,10 @@
+<!--highway-blog-category-list A-->
 <div class="categories">
   <div class="sidebar-heding">
     <h2>Categories</h2>
   </div>  
-  <ul>{% for category in section.category_list %}
-    <li><a href="{{ category.url }}">{{ category.title }} {{ category.post_count }}</a></li>
+  <ul>{% for category in site.categories %}
+    <li><a href="{{ category.url }}">{{ category.title }} {{ site.categories.COUNT }}</a></li>
   {% endfor %}</ul>
 </div>
+<!--highway-blog-category-list Z-->
