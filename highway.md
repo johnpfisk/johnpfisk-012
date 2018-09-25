@@ -12,6 +12,10 @@ undefined:
   imageURL: "/uploads/2018/09/17/jpf-00003.jpg"
   imageThumbnailURL: "/uploads/2018/09/17/jpf-00003.jpg"
 portfolio:
+- title: Dandelions
+  caption: Dandelions up close
+  imageURL: "/uploads/2018/09/17/jpf-tn-00002.jpg"
+  imageThumbnailURL: "/uploads/2018/09/17/jpf-00002.jpg"
 - title: Horses
   caption: Horses
   imageURL: "/uploads/2018/09/17/jpf-00003-1.jpg"
