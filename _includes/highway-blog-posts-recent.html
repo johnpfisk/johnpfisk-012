@@ -1,0 +1,16 @@
+<!-- highway-blog-posts-recent A -->
+<div class="recent-posts">
+  <div class="sidebar-heding">
+    <h2>Recent Posts</h2>
+  </div>
+  <ul>{% for post in section.posts %}
+    <li><a href="{{post.url | relative}}">
+      <img src="{{post.image}}" alt="{{post.image_alt}}">
+      <div class="text">
+        <h6>{{post.title}}</h6>
+        <span>{{post.created_date}}</span>
+      </div>
+    </li></a>
+  {% endfor %}</ul>
+</div>
+<!-- highway-blog-posts-recent Z -->
