@@ -26,6 +26,6 @@ fields:
   - highway-video-container
   - highway-portfolio
 pages:
-- _posts/another-post.md
+- _posts/2018-09-27-another-post.md
 - highway-t02.md
 - highway.md
