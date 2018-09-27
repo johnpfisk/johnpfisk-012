@@ -1,18 +1,19 @@
-<!--highway-blog-layout A 201809271341
+<!--highway-blog-layout A 201809271355
 {{ section }}
 -->
 <div class="blog-entries">
-  <div class="container">{% for sidebar_section in section.sidebar_left %}
+  <div class="container">
+{% if section.sidebar_left[0] %}
     <div class="col-md-3">
-      <div class="side-bar">
-      </div>
-    </div>{% endfor %}
-    <div class="col-md-{% if section.sidebar_left[0] and section.sidebar_right[0] %}6{% elsif section.sidebar_left[0] or section.sidebar_right[0] %}9{% else %}12{% endif %}">
-    </div>{% for sidebar_section in section.sidebar_right %}
+      <div class="side-bar">{% for sidebar_section in section.sidebar_left %}{% include {{ sidebar_section.template }}.html }}{% endfor %}</div>
+    </div>
+{% endif %}
+    <div class="col-md-{% if section.sidebar_left[0] and section.sidebar_right[0] %}6{% elsif section.sidebar_left[0] or section.sidebar_right[0] %}9{% else %}12{% endif %}"></div>
+{% if section.sidebar_right %}
     <div class="col-md-3">
-      <div class="side-bar">
-      </div>
-    </div>{% endfor %}
+      <div class="side-bar">{% for sidebar_section in section.sidebar_right %}{% include {{ sidebar_section.template }}.html }}{% endfor %}</div>
+    </div>
+{% endif %}
   </div>
 </div>
 <!--highway-blog-layout Z-->
