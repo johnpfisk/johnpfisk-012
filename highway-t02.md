@@ -12,4 +12,4 @@ sections:
     layout: highway-blog-category-list
 
 ---
-some content 005
+some content 006
