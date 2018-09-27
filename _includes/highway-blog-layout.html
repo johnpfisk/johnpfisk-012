@@ -1,20 +1,18 @@
-<!--highway-blog-layout A-->
+<!--highway-blog-layout A
+{{ section }}
+-->
 <div class="blog-entries">
-  <div class="container">
-{% if page.sidebar_left %}
+  <div class="container">{% if section.sidebar_left %}
     <div class="col-md-3">
       <div class="side-bar">
       </div>
-    </div>
-{% endif %}
-    <div class="col-md-{% if page.sidebar_left AND page.sidebar_right %}6{% elsif page.sidebar_left OR page.sidebar_right %}9{% else %}12{% endif %}">
-    </div>
-{% if page.sidebar_right %}
+    </div>{% endif %}
+    <div class="col-md-{% if section.sidebar_left AND section.sidebar_right %}6{% elsif section.sidebar_left OR section.sidebar_right %}9{% else %}12{% endif %}">
+    </div>{% if section.sidebar_right %}
     <div class="col-md-3">
       <div class="side-bar">
       </div>
-    </div>
-{% endif %}
+    </div>{% endif %}
   </div>
 </div>
 <!--highway-blog-layout Z-->
