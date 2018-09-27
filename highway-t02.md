@@ -7,6 +7,9 @@ sections:
   layout: highway-page-title
 - template: highway-blog-layout
   layout: highway-blog-layout
+  sidebar_left:
+  - template: highway-blog-category-list
+    layout: highway-blog-category-list
 
 ---
 some content 004
