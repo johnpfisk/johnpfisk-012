@@ -27,7 +27,7 @@ http://www.templatemo.com/tm-520-highway
 
 <body>
 <!--
-{"layout"=>"highway-full", "title"=>"highway-t02", "date"=>2018-09-25 19:25:46 +1000, "sections"=>[{"template"=>"highway-page-title", "layout"=>"highway-page-title"}, {"template"=>"highway-blog-excerpt-list", "layout"=>"highway-blog-excerpt-list"}], "content"=>"", "dir"=>"/", "name"=>"highway-t02.md", "path"=>"highway-t02.md", "url"=>"/highway-t02.html"}
+{"layout"=>"highway-full", "title"=>"highway-t02", "date"=>2018-09-25 19:25:46 +1000, "sections"=>[{"template"=>"highway-page-title", "layout"=>"highway-page-title"}, {"template"=>"highway-blog-layout", "layout"=>"highway-blog-layout"}], "content"=>"", "dir"=>"/", "name"=>"highway-t02.md", "path"=>"highway-t02.md", "url"=>"/highway-t02.html"}
 -->
 <!-- highway-titlebar A -->
 <nav>
@@ -52,56 +52,26 @@ http://www.templatemo.com/tm-520-highway
 <!-- highway-page-title Z -->
 
 
-<!-- highway-blog-excerpt-list A 
-Jekyll::Drops::SiteDrop
--->
-<div class="col-md-9">
-  <div class="blog-posts">
-    <div class="row">
-    <!-- highway-blog-post-excerpt A -->
-<div class="col-md-12">
-  <div class="blog-post">
-  <img src="/uploads/2018/09/17/jpf-tn-00002.jpg" alt="">
-    <div class="text-content">
-      <span><a href="#"></a> / <a href="#">2018-09-27 09:56:36 +1000</a> / <a href="#"></a></span>
-      <h2>Another Post</h2>
-      <div><p>This is just another post.</p>
-
-<!--break-->
-
-<p>After the break,</p>
-</div>
-      <div class="simple-btn">
-        <a href="/2018/09/27/another-post.html">continue reading</a>
+<!--highway-blog-layout A-->
+<div class="blog-entries">
+  <div class="container">
+<% if layout-sidebar-left %>
+    <div class="col-md-3">
+      <div class="side-bar">
       </div>
     </div>
-  </div>
-</div>
-<!-- highway-blog-post-excerpt Z -->
-
-    
-    <!-- highway-blog-post-excerpt A -->
-<div class="col-md-12">
-  <div class="blog-post">
-  <img src="/uploads/2018/09/17/jpf-tn-00001.jpg" alt="">
-    <div class="text-content">
-      <span><a href="#"></a> / <a href="#">2018-09-17 00:00:00 +1000</a> / <a href="#"></a></span>
-      <h2>Ipsum</h2>
-      <div><p>This is some text before the breadk</p>
-
-</div>
-      <div class="simple-btn">
-        <a href="/2018/09/17/first.html">continue reading</a>
+<% endif %>
+    <div class="col-md-6912">
+    </div>
+<% if layout-sidebar-left %>
+    <div class="col-md-3">
+      <div class="side-bar">
       </div>
     </div>
+<% endif %>
   </div>
 </div>
-<!-- highway-blog-post-excerpt Z -->
-
-    </div>
-  </div>
-</div>
-<!-- highway-blog-excerpt-list Z -->
+<!--highway-blog-layout Z-->
 
 
 <section class="overlay-menu">
