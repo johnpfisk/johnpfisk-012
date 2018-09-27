@@ -22,3 +22,5 @@ fields:
   - highway-blog-category-list
 - type: include
   template: highway-blog-excerpt-list
+  label: Something
+  name: something
