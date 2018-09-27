@@ -9,7 +9,7 @@ fields:
   default: highway-blog-layout
   hidden: true
   config:
-    required: true
+    required: false
 - type: blocks
   label: Sidebar Left
   name: sidebar_left
