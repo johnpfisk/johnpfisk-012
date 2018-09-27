@@ -10,3 +10,15 @@ fields:
   hidden: true
   config:
     required: true
+- type: blocks
+  label: Sidebar Left
+  name: sidebar_left
+  template_types:
+  - highway-blog-category-list
+- type: blocks
+  name: sidebar_right
+  label: Sidebar Right
+  template_types:
+  - highway-blog-category-list
+- type: include
+  template: highway-blog-excerpt-list
