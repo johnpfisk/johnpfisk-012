@@ -22,4 +22,5 @@ fields:
   label: Image
   name: image
 pages:
+- _posts/2018-09-27-another-post.md
 - _posts/2018-09-17-first.md
