@@ -22,6 +22,7 @@ fields:
   label: sections
   description: Page Sections
   template_types:
+  - highway-blog-layout
   - highway-page-title
   - highway-blog-excerpt-list
   - highway-video-container
