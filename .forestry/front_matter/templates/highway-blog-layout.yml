@@ -1,0 +1,12 @@
+---
+label: highway-blog-layout
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: layout
+  label: Layout
+  default: highway-blog-layout
+  hidden: true
+  config:
+    required: true
